@@ -1,3 +1,8 @@
-# My Awesome Book
+# python 多次反复学，最好的学会就是用
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+视频学习500分钟
+
+python 为快不破
+
+
+
