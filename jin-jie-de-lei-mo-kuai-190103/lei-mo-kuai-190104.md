@@ -35,8 +35,6 @@ self的定义，类变量，实例变量
 
 可以通过get,set方法设置
 
-
-
 ## 模块
 
 一个文件 xx.py
@@ -47,20 +45,132 @@ self的定义，类变量，实例变量
 
 self.name 实例对象
 
-## 作业1
+## super 初始化对象\_\_init\_\_\(self,...\)
 
-1.设计一个表示服务器的类。包含服务器的属性有:
+继承：基于共同的属性，衍生其他的属性或方法
 
-• • • •
+```
+class Person(Object):
+    xxx
+class Student(Person):
+    def __init__():
+        super(Person,xx) 
 
-CPU个数， 内存大小， 磁盘空间大小
+# 1.super需要父类有传参Object,python3不需要        
+2.在子类Student里面找不到方法，就访问父类的实现的方法
 
-操作系统类型\(Linux, Windows\) 其中操作系统类型设置为私有变量，外部不可以更改。 实现一个方法，输出服务器的属性内容为以下格式:8核CPU，40G内存，150G磁盘空间，Linux
+```
+
+## 继承
+
+多重继承，会初始化函数，\_\__init_\_\_\(\)
+
+属性，方法增加
+
+## 多态
+
+重写父类
+
+场景：
+
+发送对象的不同，调用的方式不同，允许不同类的对象对同一消息做出响应
+
+**多态的作用**
+
+消除类型之间的耦合关系
+
+场景：
+
+快捷键，不同应用的同一个按键的快捷方式
+
+```
+*.在子类Student里面找不到方法，就访问父类的实现的方法
+```
 
 
 
-## 作业2
+## 静态与普通类方法差异
 
-1.设计一个作业1中服务器的子类，实现一个新的方法，根据cpu个数，内存大小，磁盘空间大小计算出服务器当前价  
- 格 ，计算公式为:CPU个数\* 1527.679+内存大小G \* 100.21+磁盘空间大小G \* 50.789。 返回数据类型为浮点型。 保留小数点后2位 。 并实例化此方法，打印出价格。
+不需要实例化,就可以调用
+
+```
+场景，共享共用，不需实例
+```
+
+```
+@staticmethod
+def test():
+    print xx
+    
+@classmethod 类方法，一般传递cls
+def test2(cls):
+    print xx
+```
+
+```
+@proterty
+def test(self):
+ print xx 
+ 
+ 使用调用不需要小括号
+ a.test
+```
+
+## 下划线，双下划线，
+
+\_\_ 开头是私有变量或方法，private,属性不可被外部访问，get，set访问
+
+\_开头，可以被外部访问，不能随意调用
+
+\_\__xx_\_\_ 初始化的方法名，系统调用
+
+## 装饰器
+
+```
+@contexmanager
+def test():
+     xx
+     
+def contextmanager():
+     xxx
+     
+调用函数
+```
+
+##  应用场景：
+
+计数函数耗费时间,不需要每个函数都写对应的计算时间
+
+需要传入一个函数，然后调用该函数！！！
+
+#### 日志logging 
+
+#### auth鉴权
+
+
+
+```
+def time_count(func):
+  def wrap(*args,**kwargs):
+    tmp_res=func(*args,**kwargs)
+    print "time cost:",time.time()-time_flag
+    return tmp_res
+  return wrap
+
+
+可以多个修饰器
+@login
+@time_count
+def loop_time(x,y):
+  print xx
+  
+转变为多个方法调用
+login(time_count(log_time(x,y)))
+
+console:
+time cost:1.8xxx
+time cost:1.3xxx
+```
+
+
 

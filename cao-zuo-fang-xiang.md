@@ -27,27 +27,23 @@
 
 * try对应某一行的异常
 
-* 
 ```
 try:
-    print "test"
-
+  print "test"
 expect:
     print "xxxx"
-expect Exception ,e:
+expect Exception as e:
     print "xxx"
-
 else:
     print "no expection"
 finally:
     print "all task will excute"
 ```
 
-* ## 函数定义
-
+```
   重复的代码段
 
-* def functionname\(params\):
+* def functionname (params):
 
   * retrun value
 
@@ -64,23 +60,19 @@ finally:
   * 不同包
 
 * 函数注释在函数名的下面可以自动生成
-
 ```
 
-注意
-1.注释函数
-'''
-'''
-2.return None 是return False
-3.import 模块（就是一个py文件），调用里面的方法
-4.调用包，python package（目录），并且带__init__.py文件，跨目录下进行调用
-5.sys.path对应的系统路径
-sys.path[_module_]._file_
-
-
+注意  
+1.注释函数  
+'''  
+'''  
+2.return None 是return False  
+3.import 模块（就是一个py文件），调用里面的方法  
+4.调用包，python package（目录），并且带**init**.py文件，跨目录下进行调用  
+5.sys.path对应的系统路径  
+sys.path\[_module_\]._file_
 
 ```
-
 * ## 参数传递
 
   缺省参数，默认参数
@@ -88,11 +80,11 @@ sys.path[_module_]._file_
 * def student\(age=1,name="hello"\):
 
   * statement
-
 ```
+
 注意：
-```
 
+```
 * 如果不传入参数，就使用默认的参数
 
 * 一个函数可以有多个默认参数
@@ -102,25 +94,30 @@ sys.path[_module_]._file_
 ## 不定长的函数
 
 某些参数\*parameters,\*\*kwargs
+```
+
+
 
 ```
 def student(profile,*param_tuple):
-
     statement
-    
-1.*param_tuple 表示一个元组
-2.不定长参数放在普通参数后，除非无普通参数
+```
+
+1.\*param\_tuple 表示一个元组  
+2.不定长参数放在普通参数后，除非无普通参数  
 3.可以直接定义输入参数，是元组功能
+
 ```
 
 ```
-def student(profile,**kwargs):
-        statement
-1.**kwargs 相等于一个字典，key=value方式传入参数
-2.不定长参数放后面，不可以放中间和开头
+
+def student\(profile,**kwargs\):  
+        statement  
+1.**kwargs 相等于一个字典，key=value方式传入参数  
+2.不定长参数放后面，不可以放中间和开头  
 3.直接定义输入参数是字典功能
-```
 
+```
 元组格式 \(u"学生"，u"男性"，u”7岁“\)
 
 def student\(profile,\(u"学生"，u"男性"，u”7岁“\)\)
@@ -155,20 +152,18 @@ x,y参数，x+y等于函数里的实现逻辑
 场景：
 
 函数实现与返回的序列
-
-```
-def sqr(x)：
-    return x**2
-    
-a=[2,4,6]
-
-print map(sqr,a)
-[sqr(a[0])，sqr(a[1]),sqr(a[1])]
-[4,8,36]
 ```
 
+def sqr\(x\)：  
+    return x\*\*2
 
+a=\[2,4,6\]
 
+print map\(sqr,a\)  
+\[sqr\(a\[0\]\)，sqr\(a\[1\]\),sqr\(a\[1\]\)\]  
+\[4,8,36\]
+
+```
 ## 方法
 
 inputs = raw\_input\("please input that :"\)
@@ -182,18 +177,17 @@ inputs = raw\_input\("please input that :"\)
 2.打印出0-20之间的数字，如果此数字能被3整除，输出英文”three”,如果能被5整除,输出”five”，如果既能被3整除也能被5整除，输出”threes+fives”,要求用到continue.
 
 1 Threes 27 Threes... 4 14  fives Thees+fives
-
 ```
-range(0,10),访问是0-9的数
 
-list1 = []
-for i in range(1000,2501) :
-    if i%7 == 0 and i%5 == 0:
-        list1.append(i)
-print(list1)
+range\(0,10\),访问是0-9的数
 
+list1 = \[\]  
+for i in range\(1000,2501\) :  
+    if i%7 == 0 and i%5 == 0:  
+        list1.append\(i\)  
+print\(list1\)
 
-```
+ 
 
 ### 作业2
 
@@ -204,6 +198,4 @@ print(list1)
 flexible\(aa, 2, 3, x = 4, y = 5, \*\[1, 2, 3\], \*\*{'a':1,'b': 2}\)
 
 输出结果:\(2, 3, 1, 2, 3\)，{'a': 1, 'y': 5, 'b': 2, 'x': 4}
-
-
 

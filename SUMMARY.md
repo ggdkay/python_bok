@@ -12,5 +12,6 @@
   * [场景应用190104](cao-zuo-fang-xiang/chang-jing-ying-yong-190104.md)
 * [进阶的类模块190103](jin-jie-de-lei-mo-kuai-190103.md)
   * [类模块190104](jin-jie-de-lei-mo-kuai-190103/lei-mo-kuai-190104.md)
-  * 数据分析190104
+  * [数据分析190104](jin-jie-de-lei-mo-kuai-190103/shu-ju-fen-xi-190104.md)
+  * [各种模块190104](jin-jie-de-lei-mo-kuai-190103/ge-zhong-mo-kuai-190104.md)
 
