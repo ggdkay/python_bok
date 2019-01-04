@@ -75,9 +75,7 @@ type(10)
 
 ## 网络接口数据转换 bin2-&gt;int10
 
-hex =&gt; 0b800
-
-
+bin =&gt; 0b800
 
 ## 反馈
 
@@ -97,29 +95,50 @@ hex =&gt; 0b800
 
    原始province的值 为新值”江苏”
 
-
-
-pip list 查看已经安装的包
+pip list \|grep requests 查看已经安装的包
 
 int\(2.918\) 转换10进制
 
-bin\(int\(18,10\)\)
+bin\(int\(18\)\)--&gt; 0b10010
 
 判定是否in 存在Python,存在替换replace，JAVA
 
+```
+>>> s="Python is popular"
+>>> s2=s.replace("Python","java")
+>>> print s2
+java is popular
+>>> s2=s.replace("Python","java".upper())
+>>> print s2
+JAVA is popular
+```
+
 列表的等步长的打印，
 
-字典的增改，dict={},dict.set\("province",1\)
+```
+>>> print ll[1::2]
+[2, 4, 6, 8]
+```
+
+字典的增改，dict={},dict\["province"\]="test"
+
+ss=u"江苏" 中文输出
+
+xrange\(10\) 从0到10访问
+
+len\(list\) list的长度
 
 ## 作业2
 
-1. Test\_str=“Python was created in 1989, Python is using inAI, big data, IOT.”按下列要求对上面文字做出处理。  
+1. Test\_str=“Python was     created in 1989, Python is     using inAI, big data, IOT.”按下列要求对上面文字做出处理。  
    •把上面文字中的所有大写转化为小写，  
    •把这段话每个单词放到列表里面，不能不包含空格。
 
    •把列表最中间的一个单词打印出来。
 
-2. List1=\[“python”, 5,6, 8\], list2=\[“python”,”5”, 6, 8,10\],对list1和
+疑问需求2！！
+
+1. List1=\[“python”, 5,6, 8\], list2=\[“python”,”5”, 6, 8,10\],对list1和
 
    list2做出如下处理:
 
@@ -131,7 +150,15 @@ bin\(int\(18,10\)\)
 
      样\)
 
-in \[A,...,Z\]字母表？lower，index
+   * 
 
-合并，去重，
+```
+>>> ll=List1+list2
+>>> print ll
+['python', 5, 6, 8, 'python', '5', 6, 8, 10]
+>>> print set(ll)
+set([5, 6, 'python', 10, 8, '5'])
+```
+
+
 
