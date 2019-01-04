@@ -58,7 +58,6 @@ class Student(Person):
 
 # 1.super需要父类有传参Object,python3不需要        
 2.在子类Student里面找不到方法，就访问父类的实现的方法
-
 ```
 
 ## 继承
@@ -87,8 +86,6 @@ class Student(Person):
 *.在子类Student里面找不到方法，就访问父类的实现的方法
 ```
 
-
-
 ## 静态与普通类方法差异
 
 不需要实例化,就可以调用
@@ -101,7 +98,7 @@ class Student(Person):
 @staticmethod
 def test():
     print xx
-    
+
 @classmethod 类方法，一般传递cls
 def test2(cls):
     print xx
@@ -111,7 +108,7 @@ def test2(cls):
 @proterty
 def test(self):
  print xx 
- 
+
  使用调用不需要小括号
  a.test
 ```
@@ -130,24 +127,22 @@ def test(self):
 @contexmanager
 def test():
      xx
-     
+
 def contextmanager():
      xxx
-     
+
 调用函数
 ```
 
-##  应用场景：
+## 应用场景：
 
 计数函数耗费时间,不需要每个函数都写对应的计算时间
 
 需要传入一个函数，然后调用该函数！！！
 
-#### 日志logging 
+#### 日志logging
 
 #### auth鉴权
-
-
 
 ```
 def time_count(func):
@@ -163,7 +158,7 @@ def time_count(func):
 @time_count
 def loop_time(x,y):
   print xx
-  
+
 转变为多个方法调用
 login(time_count(log_time(x,y)))
 

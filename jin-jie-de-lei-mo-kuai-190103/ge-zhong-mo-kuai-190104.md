@@ -24,3 +24,13 @@ random模块
 
 
 
+mbcs  
+
+
+
+docker 技术利用
+
+odo 读写mysql的数据库，速度30M/s
+
+
+
