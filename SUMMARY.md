@@ -15,4 +15,14 @@
   * [数据分析190104](jin-jie-de-lei-mo-kuai-190103/shu-ju-fen-xi-190104.md)
   * [各种模块190104](jin-jie-de-lei-mo-kuai-190103/ge-zhong-mo-kuai-190104.md)
     * [文件190104](jin-jie-de-lei-mo-kuai-190103/ge-zhong-mo-kuai-190104/wen-jian-190104.md)
+    * [sys模块190104](jin-jie-de-lei-mo-kuai-190103/ge-zhong-mo-kuai-190104/sysmo-kuai-190104.md)
+    * time模块190104
+    * [command模块190104](jin-jie-de-lei-mo-kuai-190103/ge-zhong-mo-kuai-190104/commandmo-kuai-190104.md)
+    * [logging模块190104](jin-jie-de-lei-mo-kuai-190103/ge-zhong-mo-kuai-190104/loggingmo-kuai-190104.md)
+    * [ConfigParser模块190104](jin-jie-de-lei-mo-kuai-190103/ge-zhong-mo-kuai-190104/configparsermo-kuai-190104.md)
+    * [sql模块190104](jin-jie-de-lei-mo-kuai-190103/ge-zhong-mo-kuai-190104/sqlmo-kuai-190104.md)
+    * [shutil模块190104](jin-jie-de-lei-mo-kuai-190103/ge-zhong-mo-kuai-190104/shutilmo-kuai-190104.md)
+    * [re模块190104](jin-jie-de-lei-mo-kuai-190103/ge-zhong-mo-kuai-190104/remo-kuai-190104.md)
+    * [json模块190104](jin-jie-de-lei-mo-kuai-190103/ge-zhong-mo-kuai-190104/jsonmo-kuai-190104.md)
+    * [random模块190104](jin-jie-de-lei-mo-kuai-190103/ge-zhong-mo-kuai-190104/randommo-kuai-190104.md)
 

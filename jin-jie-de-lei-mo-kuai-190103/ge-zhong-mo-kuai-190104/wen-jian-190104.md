@@ -1,6 +1,6 @@
 ## 文件读写
 
-open 
+open
 
 Python3使用读写文件
 
@@ -20,8 +20,6 @@ file\_instance.flush\(\) 即时缓存数据输出到文件，不等关闭句柄
 
 file\_instance.close\(\) 打开文件一定要关闭，不停打开不关闭会要一定限制影响
 
-
-
 数据量大，中间遇到错误，前面的输出就不能看到，需调用flush,写入磁盘，也不能太频繁，影响读写速率
 
 大文件只要某一行，linecache模块，linecache.get\(filename,行\)
@@ -30,10 +28,7 @@ file\_instance.close\(\) 打开文件一定要关闭，不停打开不关闭会�
 
 ```
 1.file.open(encoding="utf-8") 读取有中文
-
 ```
-
-
 
 ## OS 模块
 
@@ -69,7 +64,6 @@ os.path.isfile('/path/name')
 
 dir(os) 获取对应的方法列表
 help(os.read())
-
 ```
 
 ## 场景
@@ -79,6 +73,12 @@ help(os.read())
 * 在Linux下每隔1分钟检查一下tomcat进程是不是在运行，如 果tomcat进程退出了，立即启动tomcat进程
 
 * 搜索目录/home/tools/下所有已test开头，py结尾的文件\(包 括子目录的\),把文件全路径输出到一个列表里面打印出来
+
+os.system\(\)
+
+os.listdir\(\)
+
+os.system\('ps \|grep 'Tomcat''\)
 
 
 
