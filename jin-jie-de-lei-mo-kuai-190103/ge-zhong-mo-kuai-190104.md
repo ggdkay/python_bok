@@ -22,15 +22,32 @@ json模块
 
 random模块
 
-
-
-mbcs  
+mbcs
 
 
 
-docker 技术利用
-
+```
 odo 读写mysql的数据库，速度30M/s
+docker 技术利用
+```
+
+
+
+## ini文件
+
+```
+[syscom]
+xxx
+xxx
+```
+
+## mysql 数据库
+
+差不多的模块，连接方法差不多
+
+Oracle，win-Sqlserver
+
+
 
 
 
