@@ -18,3 +18,29 @@ re 模块常用方法:
 
 可读性差
 
+
+
+正则使用，在爬虫里面很好
+
+pattern = re.compile\(r'\d+'\)
+
+编译成Pattern对象，匹配文本，获得匹配结果，无则返回None
+
+pattern.findall\('123jihvv'\) 从中查找数字
+
+
+
+```
+import re
+pattern = re.compile(u'你好')
+mm = pattern.match(u'时间')
+if mm:
+    match.group()
+    
+
+```
+
+
+
+
+

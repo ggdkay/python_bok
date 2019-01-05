@@ -16,7 +16,7 @@
   * [各种模块190104](jin-jie-de-lei-mo-kuai-190103/ge-zhong-mo-kuai-190104.md)
     * [文件190104](jin-jie-de-lei-mo-kuai-190103/ge-zhong-mo-kuai-190104/wen-jian-190104.md)
     * [sys模块190104](jin-jie-de-lei-mo-kuai-190103/ge-zhong-mo-kuai-190104/sysmo-kuai-190104.md)
-    * time模块190104
+    * [time模块190104](jin-jie-de-lei-mo-kuai-190103/ge-zhong-mo-kuai-190104/timemo-kuai-190104.md)
     * [command模块190104](jin-jie-de-lei-mo-kuai-190103/ge-zhong-mo-kuai-190104/commandmo-kuai-190104.md)
     * [logging模块190104](jin-jie-de-lei-mo-kuai-190103/ge-zhong-mo-kuai-190104/loggingmo-kuai-190104.md)
     * [ConfigParser模块190104](jin-jie-de-lei-mo-kuai-190103/ge-zhong-mo-kuai-190104/configparsermo-kuai-190104.md)

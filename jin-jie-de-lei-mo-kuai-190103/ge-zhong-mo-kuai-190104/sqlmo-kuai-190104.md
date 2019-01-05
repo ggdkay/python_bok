@@ -7,6 +7,7 @@ MySQLdb/pymysql常用方法:
 • cursor.execute(sql) 执行SQL 语句， 但返回结果不是SQL 执行的结果，是此SQL 执行后收影响的行数
 • cursor.fetchall(): 获取SQL 执行的所有结果，返回 结果是个嵌套的元组
 • cursor.fetchall()获取SQL 执行的结果，只获取第一条
+connect.commit() 
 • cursor.close() ， conn.close() : 关闭连接和cursor
 ```
 

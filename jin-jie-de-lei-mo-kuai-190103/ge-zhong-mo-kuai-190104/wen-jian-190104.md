@@ -41,6 +41,7 @@ os.system() 运行shell
 os.path.join(path,name)连接目录与文件名
 os.mkdir(name) 创建目录
 os.path.basename(path) 返回文件名
+os.removedirs(“/home/test/”):删除多个目录
 
 
 os.stat(file) 最后访问时间
@@ -68,17 +69,41 @@ help(os.read())
 
 ## 场景
 
-* 查找/tomcat/log/目录下的log文件，如果文件最后修改时间 是在1小时之前，把次文件打包压缩，备份到/home/back/log目录下
+* 查找/tomcat/log/目录下的log文件，如果文件最后修改时间 是在1小时之前，把文件打包压缩，备份到/home/back/log目录下
 
 * 在Linux下每隔1分钟检查一下tomcat进程是不是在运行，如 果tomcat进程退出了，立即启动tomcat进程
 
-* 搜索目录/home/tools/下所有已test开头，py结尾的文件\(包 括子目录的\),把文件全路径输出到一个列表里面打印出来
+* 搜索目录/home/tools/下所有test开头，py结尾的文件\(包 括子目录的\),把文件全路径输出到一个列表里面打印出来
 
 os.system\(\)
 
 os.listdir\(\)
 
 os.system\('ps \|grep 'Tomcat''\)
+
+## 压缩与解压 zip
+
+```
+If you want to create a new ZIP archive, specify its name after the -c option and then list the filename(s) that should be included:
+
+$ python -m zipfile -c monty.zip spam.txt eggs.txt
+
+
+Passing a directory is also acceptable:
+
+$ python -m zipfile -c monty.zip life-of-brian_1979/
+
+
+If you want to extract a ZIP archive into the specified directory, use the -e option:
+
+$ python -m zipfile -e monty.zip target-dir/
+
+
+For a list of the files in a ZIP archive, use the -l option:
+
+$ python -m zipfile -l monty.zip
+
+```
 
 
 

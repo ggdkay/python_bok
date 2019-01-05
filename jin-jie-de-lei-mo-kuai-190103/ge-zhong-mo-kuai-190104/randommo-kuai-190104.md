@@ -1,7 +1,6 @@
-## random 
+## random
 
 ```
-
 • random.uniform(1, 20): 随机获取1到20之间的浮点数
 • random.randint(1, 20):随机获取1到20之间的一个整数
 • random.choice(seq): 随机获取seq的一个元素
