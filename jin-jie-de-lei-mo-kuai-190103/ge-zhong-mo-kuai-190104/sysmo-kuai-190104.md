@@ -29,7 +29,6 @@ fs = open('log.txt','w')
 sys.stdout = fs  #sys.stdout重定向到log.txt,且不会输出到终端
 sys.stdout = out # 调整输出到终端
 fs.close
-
 ```
 
 
