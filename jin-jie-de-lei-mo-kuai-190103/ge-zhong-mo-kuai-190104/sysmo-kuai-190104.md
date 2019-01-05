@@ -17,13 +17,19 @@ sys 模块常用方法:
 
 * 把上面的脚本出信息通过sys.stdout重定向到log.txt
 
-
-
 ```
 python run.py /test/123
 sys.path.append(sys.argv)
 
 sys.stdout > log.txt
+
+print("xx")
+out = sys.stdout # 重定向前保存输出内容
+fs = open('log.txt','w')
+sys.stdout = fs  #sys.stdout重定向到log.txt,且不会输出到终端
+sys.stdout = out # 调整输出到终端
+fs.close
+
 ```
 
 
