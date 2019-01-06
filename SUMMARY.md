@@ -26,4 +26,5 @@
     * [json模块190104](jin-jie-de-lei-mo-kuai-190103/ge-zhong-mo-kuai-190104/jsonmo-kuai-190104.md)
     * [random模块190104](jin-jie-de-lei-mo-kuai-190103/ge-zhong-mo-kuai-190104/randommo-kuai-190104.md)
 * [在线190105](zai-xian-190105.md)
+  * 初始化190105
 
