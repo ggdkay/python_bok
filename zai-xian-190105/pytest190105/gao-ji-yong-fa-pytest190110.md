@@ -5,22 +5,19 @@
   * 通过关键字运行测试用例 pytest -k 
     * 缺陷，难以维护，无法多重达标
   * 通过标签来运行测试用例，既可以用于函数，也可是作用于类
-* 
-```
-@pytest.fixture 有不同的级别可以调试，fuction,class,session,package 
-```
+* ```
+  @pytest.fixture 有不同的级别可以调试，fuction,class,session,package
+  ```
 
 module 模块执行一次，通常是setup,teardown
 
-*  导航栏用户的删除和增加，可以当导航为一个模块
+* 导航栏用户的删除和增加，可以当导航为一个模块
 
 class 对应的类执行一次，可以设置自动执行，不需在类中每一个方法备注
 
- 
-
 ##### fixtures 中的装饰器使用
 
-yield􏰆􏰯􏰀􏰉􏰛 前 相当于setup 
+yield􏰆􏰯􏰀􏰉􏰛 前 相当于setup
 
 yield 􏰆􏰣􏰀􏰉后 相当于􏰛tearDown
 
@@ -96,7 +93,7 @@ def build_db_connect():
 
 统计关键用例P1
 
-统计语法类似于python 
+统计语法类似于python
 
 ```
 pytest -sq  xx.py -m 'not tan'
@@ -128,15 +125,11 @@ pytest - v xx文件::类
 pytest - v xx文件::类:: 方法
 ```
 
-
-
 执行目录或package
 
 ```
 pytest -v xx目录
 ```
-
-
 
 执行标签
 
@@ -144,13 +137,27 @@ pytest -v xx目录
 pytest -m P0 xx目录
 ```
 
-
-
 #### 执行方式2
 
 pytest.main 参数与pytest 命令行
 
 
+
+### 代码覆盖率
+
+覆盖率 插件 pytest-cov
+
+```
+pytest --cov=dir testcase/
+```
+
+* debug 断点是否覆盖，理解代码逻辑
+* 实例
+* 下载下面的开源项目，
+
+  [https://github.com/lxneng/xpinyin](https://github.com/lxneng/xpinyin)
+
+  此项目实现了汉语到拼音的转换关系。
 
 
 
