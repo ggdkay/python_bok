@@ -2,7 +2,9 @@
 
 python-cov
 
-
+```
+pytest.mark.parametrize 参数化
+```
 
 ```
 import pytest
@@ -60,8 +62,6 @@ def test_getinitials_default(resp):
     assert p.get_initials() == resp
 ```
 
-
-
 ```
 ---------- coverage: platform darwin, python 3.6.5-final-0 -----------
 Name                  Stmts   Miss  Cover
@@ -70,7 +70,6 @@ zpin/__init__.py         82      5    94%
 zpin/test_pinyin.py      16      0   100%
 -----------------------------------------
 TOTAL                    98      5    95%
-
 ```
 
 
