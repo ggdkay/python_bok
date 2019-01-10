@@ -33,4 +33,6 @@
     * [覆盖率190110](zai-xian-190105/pytest190105/fu-gai-lv-190110.md)
   * [单元测试190109](zai-xian-190105/dan-yuan-ce-shi-190109.md)
 * [思而不写190106](si-er-bu-xie-190106.md)
+* [python后续190110](pythonhou-xu-190110.md)
+* [xmind2testcase190110](xmind2testcase190110.md)
 
