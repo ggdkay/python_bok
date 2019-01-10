@@ -28,5 +28,8 @@
 * [在线190105](zai-xian-190105.md)
   * [初始化190105](zai-xian-190105/chu-shi-hua-190105.md)
   * [pytest190105](zai-xian-190105/pytest190105.md)
+    * [pytest详述190109](zai-xian-190105/pytest190105/pytestxiang-shu-190109.md)
+    * [高级用法pytest190110](zai-xian-190105/pytest190105/gao-ji-yong-fa-pytest190110.md)
+  * [单元测试190109](zai-xian-190105/dan-yuan-ce-shi-190109.md)
 * [思而不写190106](si-er-bu-xie-190106.md)
 
